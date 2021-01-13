@@ -1,0 +1,16 @@
+header,footer{
+    background-color: rgb(8, 36, 43);
+    color: white;
+    text-align: center;
+}
+footer{
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+}
+main{
+    text-align: center;
+}
+#platno{
+    background-image: url("img/pozadi.png");
+}
