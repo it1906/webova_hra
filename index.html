@@ -1,23 +1,51 @@
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styly.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
-        integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous" />
+    <link rel="stylesheet" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous" />
     <title>Webová hra - Hadamčík</title>
 </head>
+
 <body>
     <header>
-        <h1>Chyť ovoce!</h1>
+        <h1 id="nadpis1">Chyť ovoce!</h1>
     </header>
     <main>
-        <canvas id="platno" width="1400" height="800" class="border"></canvas>
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div col-sm-4>
+                        <label>Hudební doprovod</label>
+                        <div>
+                            <div class="form-check form-check-inline">
+                                <input name="hudba" id="drama" value="Dramatická" checked="checked" type="radio"
+                                    class="form-check-input">
+                                <label class="form-check-label" for="Dramatická">Dramatická hudba</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input name="hudba" id="fun" value="Veselá" type="radio" class="form-check-input">
+                                <label class="form-check-label" for="Veselá">Veselá hudba</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="platno_div" col-sm-10>
+                    <canvas id="platno" width="1400" height="800" class="border"></canvas>
+                    <img id="kosik" src="img/kosik.png">
+                    <img id="apple" src="img/apple.png" style="visibility: hidden;">
+                </div>
+                <div>
+                    <button class="startstop" onclick="game.play();}">Play</button>
+                    <button class="startstop" onclick="game.reset();">Restart</button>
+                </div>
+            </div>
+        </div>
     </main>
-    <footer>
-        Jan Hadamčík, SŠPU - IT2, 2021&reg;
-    </footer>
-<script src="main.js"></script>
+    <script src="main.js"></script>
 </body>
+
 </html>
