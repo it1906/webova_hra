@@ -1,25 +1,18 @@
-header,footer{
-    background-color: rgb(8, 36, 43);
+header{
+    background-color: rgb(29, 28, 28);
     color: white;
     text-align: center;
-}
-footer{
-    position:absolute;
-    bottom: 0;
-    width: 100%;
+    font-size: 100%;
 }
 #platno{
     background-image: url("img/pozadi.png");
 }
-#platno_div{
+
+main{
+    color: white;
+    background-color: rgb(106, 103, 103);
+}
+#skoree{
+    font-size: 225%;
     text-align: right;
-}
-.startstop{
-    text-align: right;
-}
-#hudba_form{
-    text-align: left;
-}
-#nadpis1{
-    font-size: 300%;
 }

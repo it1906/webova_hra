@@ -7,44 +7,53 @@
     <link rel="stylesheet" href="styly.css">
     <link rel="stylesheet" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
         crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Webová hra - Hadamčík</title>
 </head>
 
 <body>
     <header>
-        <h1 id="nadpis1">Chyť ovoce!</h1>
+        <h1 id="nadpis1">Chytni ovoce!</h1>
     </header>
     <main>
-        <div>
-            <div class="container">
-                <div class="row">
-                    <div col-sm-4>
-                        <label>Hudební doprovod</label>
-                        <div>
-                            <div class="form-check form-check-inline">
-                                <input name="hudba" id="drama" value="Dramatická" checked="checked" type="radio"
-                                    class="form-check-input">
-                                <label class="form-check-label" for="Dramatická">Dramatická hudba</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input name="hudba" id="fun" value="Veselá" type="radio" class="form-check-input">
-                                <label class="form-check-label" for="Veselá">Veselá hudba</label>
-                            </div>
+        <div class="container" col-sm-16 >
+            <div class="row">
+                <div col-sm-2>
+                    <label>Hudební doprovod (pozor na hlasitost) </label>
+                    <div>
+                        <div class="form-check form-check-inline">
+                            <input name="hudba" id="drama" value="drama" type="radio">Dramatická hudba</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input name="hudba" id="fun" value="fun" type="radio">Veselá hudba</label>
                         </div>
                     </div>
                 </div>
-                <div id="platno_div" col-sm-10>
-                    <canvas id="platno" width="1400" height="800" class="border"></canvas>
-                    <img id="kosik" src="img/kosik.png">
-                    <img id="apple" src="img/apple.png" style="visibility: hidden;">
+                <div class="col-sm-2">
+                    <button id="startmusic" onclick="audio.vyber()">Play music (click 2x)</button>
+                    <button id="stopmusic" onclick="audio.pause()">Stop music</button>
                 </div>
-                <div>
-                    <button class="startstop" onclick="game.play();}">Play</button>
-                    <button class="startstop" onclick="game.reset();">Restart</button>
+                <div class="col-sm-2">
+                    <p id="skoree">0</p>
+                </div>
+                <div class="col-sm-10">
+                    <canvas id="platno" width="1400" height="800" class="border"></canvas>
+                    <img id="kosik" src="img/kosik.png"style="visibility: hidden;">
+                    <img id="apple" src="img/apple.png"style="visibility: hidden;">
                 </div>
             </div>
         </div>
     </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <script src="main.js"></script>
 </body>
 
