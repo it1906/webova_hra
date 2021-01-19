@@ -4,8 +4,9 @@ let skoreText = document.getElementById("skoree");
 let apple = document.getElementById("apple");
 let kosik = document.getElementById("kosik");
 let dramatic = new Audio('sound/drama.mp3');
+let miss = new Audio('sound/miss.mp3');
 let funny = new Audio('sound/fun.mp3');
-let jabkoSpeed = 3;
+let jabkoSpeed = 3.5;
 
 class Jabka {
     static FILL_COLOR = "black";
@@ -109,7 +110,8 @@ let hra = {
                     obj.obnov();
                 }
             }
-            if (obj.y > canvas.height + 25) {
+            if (obj.y > canvas.height + 10) {
+                miss.play();
                 obj.obnov();
             }
         })

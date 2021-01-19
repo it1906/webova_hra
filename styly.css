@@ -1,18 +1,65 @@
 header{
-    background-color: rgb(29, 28, 28);
+    background-color: #22435c;
     color: white;
     text-align: center;
-    font-size: 100%;
+    font-size: 300%;
 }
 #platno{
     background-image: url("img/pozadi.png");
 }
 
-main{
+main, body{
     color: white;
-    background-color: rgb(106, 103, 103);
+    background-color: rgb(128, 127, 127);
 }
 #skoree{
-    font-size: 225%;
+    font-size: 500%;
     text-align: right;
 }
+#startmusic{
+    padding: 5px 10px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #4c90af;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 7px rgb(211, 208, 208);
+}
+#startmusic:hover{
+    background-color: #34668c
+}
+#startmusic:active {
+    background-color: #34668c;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+#stopmusic{
+    padding: 5px 10px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #4c90af;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 7px rgb(211, 208, 208);
+}
+#stopmusic:hover{
+    background-color: #34668c
+}
+#stopmusic:active {
+    background-color: #34668c;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  .hudebnidoprovod{
+    padding: 5px 5px;
+    font-size: 18px;
+  }
+  #nadpis2{
+    font-size: 24px;
+  }
