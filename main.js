@@ -6,7 +6,7 @@ let kosik = document.getElementById("kosik");
 let dramatic = new Audio('sound/drama.mp3');
 let miss = new Audio('sound/miss.mp3');
 let funny = new Audio('sound/fun.mp3');
-let jabkoSpeed = 3.5;
+let jabkoSpeed = 3;
 
 class Jabka {
     static FILL_COLOR = "black";

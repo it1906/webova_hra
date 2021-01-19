@@ -14,19 +14,19 @@
 
 <body>
     <header>
-        <h1>Catch the Apples!</h1>
+        <h1>Pohyb: šipka v pravo a v levo</h1>
     </header>
     <main>
         <div class="container" col-sm-24 >
             <div class="row">
                 <div class="col-sm-12">
-                    <canvas id="platno" width="1400" height="800" class="border"></canvas>
+                    <canvas id="platno" width="1400" height="700" class="border"></canvas>
                     <img id="kosik" src="img/kosik.png"style="visibility: hidden;">
                     <img id="apple" src="img/apple.png"style="visibility: hidden;">
                 </div>
                 <div class="col-sm-4">
-                    <label class="hudebnidoprovod" id="nadpis2">Hudební doprovod</label>
-                    <div class="hudebnidoprovod">
+                    <label id="hudebnidoprovod" id="nadpis2">Hudební doprovod</label>
+                    <div id="hudebnidoprovod2">
                         <div class="form-check form-check-inline">
                             <input name="hudba" id="drama" value="drama" type="radio">Dramatická hudba</label>
                         </div>
@@ -45,6 +45,9 @@
             </div>
         </div>
     </main>
+    <footer>
+        <p>GONNA CATCH THEM ALL!</p>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
